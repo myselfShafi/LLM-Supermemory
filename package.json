@@ -1,0 +1,30 @@
+{
+  "name": "custom_repo",
+  "version": "1.0.0",
+  "description": "LLM + Supermemory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myselfShafi/LLM-Supermemory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/myselfShafi/LLM-Supermemory/issues"
+  },
+  "homepage": "https://github.com/myselfShafi/LLM-Supermemory#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
