@@ -1,0 +1,44 @@
+# Node internals
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+
+# Build artifacts
+dist/
+build/
+out/
+
+# TypeScript cruft
+*.tsbuildinfo
+
+# Local env
+.env
+.env.*
+!.env.example
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Misc
+tmp/
+temp/
