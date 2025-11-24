@@ -4,7 +4,7 @@
   "description": "LLM + Supermemory",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsc && node dist/app.js",
+    "start": "npx tsc && node --env-file=.env dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +26,8 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "@prisma/client": "^7.0.0",
+    "express": "^5.1.0",
+    "prisma": "^7.0.0"
   }
 }
