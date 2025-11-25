@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { handleGet, handlePost } from "./ApiController";
+import { handleGet, handlePost } from "./ApiController.js";
 
 const router = Router();
 
