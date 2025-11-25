@@ -1,6 +1,2 @@
-import { MESSAGE, BUILDERS } from "./messages.js";
-
-export {
-    MESSAGE,
-    BUILDERS
-};
+export * from './messages.constant.js';
+export * from './httpCodes.constant.js';

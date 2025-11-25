@@ -1,9 +1,11 @@
+import { HTTP_STATUS, type HttpStatusCode } from "../constants/httpCodes.constant.js";
+
 class ApiError extends Error {
     success: boolean;
-    statusCode: number;
+    statusCode: HttpStatusCode;
     errors?: any[];
 
-    constructor(statusCode = 500, message = 'Internal server error', errors?: any[], stack?: string) {
+    constructor(statusCode = HTTP_STATUS.SERVER_ERROR, message = 'Internal server error', errors?: any[], stack?: string) {
         super(message);
 
         this.success = false;

@@ -1,10 +1,12 @@
+import { HTTP_STATUS, type HttpStatusCode } from "../constants/httpCodes.constant.js";
+
 class ApiResponse<T> {
     success: boolean;
-    statusCode: number;
+    statusCode: HttpStatusCode;
     data: T;
     message: string;
 
-    constructor(statusCode = 200, data: T, message = 'success') {
+    constructor(statusCode = HTTP_STATUS.OK, data: T, message = 'success') {
         this.success = true;
         this.statusCode = statusCode;
         this.data = data;
