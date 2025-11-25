@@ -42,4 +42,4 @@ coverage/
 # Misc
 tmp/
 temp/
-/src/generated/prisma
+/prisma/generated
