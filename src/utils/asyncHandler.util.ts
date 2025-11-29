@@ -1,9 +1,9 @@
 import type { NextFunction, Request, Response } from "express";
-import ApiError from "./ApiError.util.js";
 import { env } from "../config/env.config.js";
 import { MESSAGE } from "../constants/index.js";
+import ApiError from "./ApiError.util.js";
 
-const asyncHandler = (fn: any) => (req: Request, res: Response, next: NextFunction) => {
+const asyncHandler = (fn: (req: Request, res: Response, next: NextFunction) => Promise<any>) => (req: Request, res: Response, next: NextFunction) => {
     Promise.resolve(fn(req, res, next))
     .catch(err =>{
         if (err instanceof ApiError) {
