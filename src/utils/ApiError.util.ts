@@ -5,7 +5,12 @@ class ApiError extends Error {
     statusCode: HttpStatusCode;
     errors?: any[];
 
-    constructor(statusCode = HTTP_STATUS.SERVER_ERROR, message = 'Internal server error', errors?: any[], stack?: string) {
+    constructor(
+        statusCode: HttpStatusCode = HTTP_STATUS.SERVER_ERROR,
+        message: string = 'Internal server error',
+        errors?: any[],
+        stack?: string
+    ) {
         super(message);
 
         this.success = false;

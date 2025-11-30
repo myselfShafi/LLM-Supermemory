@@ -6,7 +6,11 @@ class ApiResponse<T> {
     data: T;
     message: string;
 
-    constructor(statusCode = HTTP_STATUS.OK, data: T, message = 'success') {
+    constructor(
+        statusCode: HttpStatusCode = HTTP_STATUS.OK,
+        data: T,
+        message: string = 'success'
+    ) {
         this.success = true;
         this.statusCode = statusCode;
         this.data = data;
